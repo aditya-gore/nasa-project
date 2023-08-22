@@ -38,7 +38,10 @@ function loadPlanetsData() {
   });
 }
 
+function getAllPlanets() {
+  return habitablePlanets;
+}
 module.exports = {
   loadPlanetsData, // to be executed when server starts
-  planets: habitablePlanets,
+  getAllPlanets,
 };
